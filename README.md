@@ -1,3 +1,3 @@
 # WebUIAUTOMATION
 
-DemoTest
+DemoText

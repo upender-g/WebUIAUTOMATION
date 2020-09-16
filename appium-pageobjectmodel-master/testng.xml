@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="tests">
+	<listeners>
+		<listener class-name="com.qa.listeners.TestListener" />
+	</listeners>
+	<test name="chrome">
+		<parameter name="browser" value="Chrome" />
+		<parameter name="emulator" value="true" />
+		<parameter name="platformName" value="Chrome" />
+		<parameter name="udid" value="replace_with_device_udid" />
+		<parameter name="deviceName" value="" />
+		<parameter name="systemPort" value="10000" />
+		<parameter name="chromeDriverPort" value="11000" />
+		<classes>
+			<class name="com.qa.tests.LoginTests"></class>
+			<!--<class name="com.qa.tests.ProductTests"></class>-->
+		</classes>
+	</test>
+	<test name="firefox">
+		<parameter name="browser" value="firefox" />
+		<parameter name="emulator" value="true" />
+		<parameter name="platformName" value="firefox" />
+		<parameter name="udid" value="replace_with_device_udid" />
+		<parameter name="deviceName" value="" />
+		<parameter name="systemPort" value="10000" />
+		<parameter name="chromeDriverPort" value="11000" />
+		<classes>
+			<class name="com.qa.tests.Tests2"></class>
+			<!--<class name="com.qa.tests.ProductTests"></class>-->
+		</classes>
+	</test>
+</suite> <!-- Suite -->
